@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <img src="some link of copied img.internet"> 
+    <!-- whatever written after attribute called supporting tag-->
+     <!-- attribute is src-->
+     """ 
+      if we are getting img from google, rightclick on the image and click on copy image address and paste it in src attribute
+      inside the double quotes. We can also download the image and then upload it in our folder and then give the path of the image in src attribute. 
+      but on notiicing the quality of image is bad from internet. So, we need platforms
+      from which we will get high quality images : Pexels.com (https://www.pexels.com/)
+      no need to close the img tag/ copy image link/address in the website and paste it in src attribute.
+
+      we need to change the size of the image by using width and height attributes. 
+      We can also use CSS to change the size of the image.
+      
+      two attributes to change the size of the image are width and height. We can use them in the img tag like this:
+      <img src="some link of copied img.pexels.com" width="500" height="300">
+
+      How to add image that is already there in my system?
+        <img src="path of the image in my system" width="500" height="300">
+        img must be in the same folder as the html file. 
+        If it is in a different folder, we need to give the path of the image in the src attribute.
+        Shortcut: <img src="./name of the image with extension" width="500" height="300"> (./ means current folder)
+
+        Another tag to create horizontal straight line!
+        <hr> it will draw a straight line across the page. hr=horizontal rule. 
+        self closing tag. used to separate content in a webpage.
+        We can also change the color and thickness of the line by using CSS.
+
+    Video to add in webpage? Youtube to webpage?
+        if the video has copyright we can't use otherwise we can use it 
+        by using the embed code provided by youtube. Right click on playing video, 
+        copy embed code and paste it in the body of the html file. 
+    
+    We can find video if it is public or private?
+        Pause the video and right click on it, if we see the option "copy video URL" 
+        then it is public and we can use it otherwise it is private and we can't use it.
+        we can also change the size of the video by changing the width and height in the embed code.
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID"></iframe>
+
+
+        In Instagram, could not load image tap to retry-- this msg called alternative message
+        so that user will wait for sometime. Attribute used to add alternative message is alt. 
+
+        <img src="some link of copied img.pexels.com" width="500" height="300" alt="alternative message">
+
+    What if we want to add Google Map Location?
+        We can use the embed code provided by Google Maps. Share, embed a map, select size as per need, 
+        copy html and paste it in the body of the html file.
+        Go to Google Maps, search for the location you want to embed, click on the share button, 
+        then click on the embed a map tab, copy the embed code and paste it in the body of the html file. 
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086913678714!2d144.9630579153168!3d-37.81362797975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577c9b9b9b9b9b9!2sFederation%20Square%2C%20Melbourne%20VIC%203000%2C%20Australia!5e0!3m2!1sen!2sin!4v1616176176176"></iframe>
+ 
+        i frame tags called embed tag, used to embed content from other sources like youtube, google maps etc.
+        3rd party platforms: Google, Pexels etc. 
+        If we want to get a resurce from a 3rd party platform to embed data into my webpage
+        using another website data in your website is called embedding.
+
+        Core HTML tags:
+        drop down box is the same thing with multiple options: 
+        <select>   <!-- cannot provide name of the select box -->
+            <option>India</option>
+            <option>Russia</option>
+            <option selected>country</option>
+            <option disabled>USA</option>
+            <option selected disabled>select country</option>
+        </select>
+        selected tag is used to preselect an option in the drop down box. 
+        In the above example, country will be preselected when the page loads.
+
+        Temporary period of time user cannot use an option: 
+        disabled tag is used to disable an option in the drop down box.
+
+        Can we keep an option both selected and disabled at the same time? 
+        Yes, we can keep an option both selected and disabled at the same time.
+
+        <select name="city" disabled> <!-- this will disable the entire select box, user cannot select any option -->
+            user cannot see the name of the select box
+            We can also make the entire select box disabled 
+            by using the disabled attribute in the select tag like this:
+        </select>
+
+        How to create multiple options?
+            <select required> 
+        <!-- this will make the select box mandatory, 
+         user has to select an option before submitting the form -->
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+            </select>
+
+            <select multiple>
+        <!-- this will allow the user to select multiple options 
+         from the drop down box -->
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+            </select>
+
+            Size attribute is used to specify the number
+            of visible options in the drop down box.
+
+            <select size="3">
+        <!-- this will show 3 options at a time in the drop down box -->
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+                <option>Option 4</option>
+                <option label="USA">United States of America</option>
+            </select>
+            we will get a scroll bar to scroll through the options 
+            if the number of options is more than the size specified in the select tag.
+
+            If a longg option, then it will automatically 
+            break into multiple lines and the width of the select box 
+            will adjust accordingly.
+            Otherwise we use label tag to give a short name to the option 
+            and the long name will be shown in the drop down box.
+
+    Another common tag except select tag:
+            button tag: used to create a button in the webpage.
+
+            <button>Login</button>
+            <button>Submit</button>
+
+    Tag for table: <!-- table made up of rows and columns -->
+            <table border="1" cellspacing="10" cellpadding="10" bgcolor="lightgrey" align="center"> 
+                <!-- then table comes in the middle of the page-->
+                <!-- border attribute is used to specify the border of the table -->
+                <!-- depending on size how thick it is-->
+                <thead bgcolor="grey" align="center"> <!-- table heading -->
+                <tr> <!-- row 1 -->
+                    <th>Column 1</th>
+                    <th>Column 2</th>
+                    <th>Column 3</th>
+                </tr>
+                </thead>
+                <tbody bgcolor="lightblue" align="center"> <!-- table body -->
+                <tr> <!-- row 2 -->
+                    <td>Data 1</td> <!-- technically called cell, no space between the boxes, making the table look compact-->
+                    <td>Data 2</td>
+                    <td>Data 3</td>
+                </tr>
+                <tr> <!-- row 3 -->
+                    <td>Data 4</td>
+                    <td>Data 5</td>
+                    <td>Data 6</td>
+                </tr>
+                </tbody>
+            </table>
+
+    cellspacing attribute is used to specify 
+    the space between the cells in the table.
+
+    Some cells may have longer data than others, 
+    so the width of the cells will adjust accordingly.
+
+    cellpadding attribute is used to specify the space 
+    between the content of the cell and the border of the cell.
+    Add the space inside the box from all 4 directions
+
+Interesting tags:
+    1. Details tag: used to create a collapsible section in the webpage.
+        <details>
+            <summary>Click here to see more details</summary>
+            <p>This is the content that will be shown when the user clicks on the summary.</p>
+        </details>
+
+    2. Progress tag: used to create a progress bar in the webpage.
+        <progress value="50"max="100"></progress>
+        maximum value is 100
+        value attribute is used to specify the current value of the progress bar
+        and max attribute is used to specify the maximum value of the progress bar.
+
+    3. Meter tag: used to create a meter in the webpage. smaller than progress bar
+        <meter value="30" min="0" max="1"></meter>
+
+    4. abbreviation tag: used to create an abbreviation in the webpage.
+        <abbr title="Hypertext Markup Language">HTML</abbr>
+        use it in combination with paragraph tag to give the full form of the abbreviation.
+        the dotted underline indicates that it is an abbreviation.
+        title attribute is used to specify the full form of the abbreviation. 
+        When the user hovers over the abbreviation, the full form will be shown as a tooltip.
+
+    5. Use <code>console.log()</code> to print something in the console.
+        puts console.log() in code font to indicate that it is a code snippet.
+
+        <p>
+            Press <kbd>Ctril</kbd> + <kbd>C</kbd> to copy the text.
+            also changes the font to indicate that it is a keyboard shortcut.
+        </p>
+
+    6. Marquee tag: used to create a scrolling text in the webpage. 
+        <marquee> This is a scrolling text </marquee>
+        we can also specify the direction of the scrolling text by using the direction attribute like this:
+        <marquee direction="right"> This is a scrolling text </marquee>
+    
+    7. Time tag: used to specify a date or time in the webpage.
+        <time datetime="2024-06-01">June 1, 2024</time>
+        datetime attribute is used to specify the date or time in a machine-readable format. 
+        The content inside the time tag is the human-readable format of the date or time.
+        This is good for search engine optimization (SEO) although it's same as text
+
+    8. Pop up/dialog tag: used to create a pop-up dialog in the webpage.
+        <dialog>Hello I am PopUp</dialog>
+
+
+    Multimedia tags:
+    1. Audio tag: used to embed audio in the webpage.
+    <audio controls>
+        <source src="paste the link here" type="audio/mp3">
+        mp3 is universal audio format, it will work in all browsers.
+    </audio>
+    Platform to get audio: All in one platform: 
+    Pixabay: images, videos, music, sound effects, 3D models
+    without controls attribute, the audio will not show
+        
+
+    2. Video tag: used to embed video in the webpage.
+    <video height="300" width="500" controls>
+        <source src="paste the link here" type="video/mp4">
+    </video>
+    video can have different extension (here mp4). 
+        Most versatile is mp4 and preferred, might or might not work, mostly use Pexels
+        also change the height and width
+        But not readily playable, 
+        we need to add controls attribute to make it playable like this.
+
+        To make it auto-play, we can use the autoplay attribute like this:
+        <video height="300" width="500" controls autoplay>
+            If we don't write the type then also it is fine, 
+            it will automatically detect the type of the video and play it accordingly.
+
+        To loop the video, we can use the loop attribute like this:
+        <video height="300" width="500" controls autoplay loop>
+
+        To mute the video, we can use the muted attribute like this:
+        <video height="300" width="500" controls autoplay loop muted>
+      """
+
+    Assignment: 
+
+</body>
+</html>
